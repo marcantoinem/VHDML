@@ -8,7 +8,7 @@ entity vhdml_top is
     );
 end;
 
-architecture arch of vhdml_top is
+architecture rtl of vhdml_top is
 begin
         
-end arch;
+end rtl;

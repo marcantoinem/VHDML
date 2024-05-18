@@ -1,1 +1,2 @@
 vunit_hdl==4.7
+teroshdl==3.0

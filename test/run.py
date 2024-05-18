@@ -13,10 +13,11 @@ vu.add_vhdl_builtins()
 lib = vu.add_library("lib")
 
 # Add all files ending in .vhd in current working directory to library
+lib.add_source_files("../src/**/*.vhd")
+
 lib.add_source_files("src/**/*.vhd")
 
-lib.add_source_files("src_test/**/*.vhd")
-
+lib.set_sim_option("ghdl.elab_flags", ["-Wl,rust_ffi_to_vhdl/target/debug/librust_ffi_to_vhdl.so"])
 # Run vunit function
 vu.main()
 
