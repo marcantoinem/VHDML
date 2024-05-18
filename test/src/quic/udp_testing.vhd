@@ -22,7 +22,7 @@ begin
         variable result : integer := 0;
     begin
         test_runner_setup(runner, runner_cfg);
-        printhelloworld;
+        respond_tcp_request;
         wait for 100 ns;
         test_runner_cleanup(runner);
     end process;
